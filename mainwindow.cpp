@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->setWindowTitle("Архиватор 7zip");
     ui->ArchievView->setAcceptDrops(true);
     PATH = "";
-    this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+    setFixedSize(800, 530);
 }
 
 
