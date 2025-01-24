@@ -21,7 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui -> FileView -> setRootIndex(FileSystemModel -> index(QDir::homePath()));
     connect(ui->FileView, &QTreeView::clicked, this, &MainWindow::GetSelectedItem);
     connect(ui->AddButton, &QPushButton::clicked, this, &MainWindow::AddFiles);
+    connect(ui->RemoveButton, &QPushButton::clicked, this, &MainWindow::RemoveFiles);
     connect(ui->ArchivateButton, &QPushButton::clicked, this, &MainWindow::CreateArchive);
+
     ui->ArchievView->setAcceptDrops(true);
     PATH = "";
 }
@@ -45,6 +47,10 @@ void MainWindow::AddFiles(){
         ui->ArchievView->addItem(PATH);
     }
     PATH = "";
+}
+
+void MainWindow::RemoveFiles(){
+    ui->ArchievView->takeItem(ui->ArchievView->currentRow());
 }
 
 void MainWindow::CreateArchive(){

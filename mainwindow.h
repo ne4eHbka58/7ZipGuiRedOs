@@ -6,6 +6,7 @@
 #include <QTreeView>
 #include <QStringList>
 #include <QLineEdit>
+#include <QStandardItemModel>
 
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
@@ -27,6 +28,7 @@ public:
 private slots:
     void GetSelectedItem(const QModelIndex& index);
     void AddFiles();
+    void RemoveFiles();
     void CreateArchive();
     void ExecuteArchiveCommand(QStringList command);
     void dragEnterEvent(QDragEnterEvent *event); // Новый слот
