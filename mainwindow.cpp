@@ -23,9 +23,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->AddButton, &QPushButton::clicked, this, &MainWindow::AddFiles);
     connect(ui->RemoveButton, &QPushButton::clicked, this, &MainWindow::RemoveFiles);
     connect(ui->ArchivateButton, &QPushButton::clicked, this, &MainWindow::CreateArchive);
-
+    this->setWindowTitle("Архиватор 7zip");
     ui->ArchievView->setAcceptDrops(true);
     PATH = "";
+    this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 }
 
 

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>530</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -72,10 +72,10 @@
    <widget class="QComboBox" name="FormatType">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>520</x>
       <y>440</y>
       <width>51</width>
-      <height>22</height>
+      <height>21</height>
      </rect>
     </property>
     <item>
@@ -107,7 +107,7 @@
    <widget class="QComboBox" name="CompressType">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>580</x>
       <y>440</y>
       <width>71</width>
       <height>22</height>
@@ -142,27 +142,14 @@
    <widget class="QPushButton" name="ArchivateButton">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>660</x>
       <y>440</y>
       <width>111</width>
-      <height>22</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
      <string>Архивировать</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="RemoveButton_2">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>350</y>
-      <width>101</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Посмотреть</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -199,6 +186,32 @@
     </property>
     <property name="text">
      <string> (по желанию)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>261</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выберите файлы для архивации</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>50</y>
+      <width>261</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Предпросмотр</string>
     </property>
    </widget>
   </widget>
